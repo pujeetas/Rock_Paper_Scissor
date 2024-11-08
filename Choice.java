@@ -6,6 +6,12 @@ public class Choice {
     String choice[] = { "Rock", "Paper", "Scissors" };
     Scanner sc = new Scanner(System.in);
 
+    /**
+     * Prompts the user to enter the number of rounds they want to play.
+     * Reads and returns the user input as an integer.
+     *
+     * @return the number of rounds as an integer.
+     */
     public int Rounds() {
         int round = 0;
 
@@ -14,6 +20,14 @@ public class Choice {
         sc.nextLine();
         return round;
     }
+
+    /**
+     * Prompts the user to enter their choice of "Rock," "Paper," or "Scissors."
+     * Ensures that the input is valid, and returns it in a properly formatted way
+     * (first letter capitalized, the rest lowercase).
+     *
+     * @return the user's choice as a String ("Rock," "Paper," or "Scissors").
+     */
 
     public String userChoice() {
         String userInput;
@@ -33,6 +47,12 @@ public class Choice {
         return userInput;
     }
 
+    /**
+     * Randomly selects and returns the computer's choice from the options
+     * "Rock," "Paper," or "Scissors."
+     *
+     * @return the computer's choice as a String ("Rock," "Paper," or "Scissors").
+     */
     public String computerChoice() {
         Random random = new Random();
         int randomIndex = random.nextInt(choice.length); // Generate a random index within the array's bounds
