@@ -15,6 +15,19 @@ Scissors beats Paper.
 Paper beats Rock.
 If both the player and the computer make the same choice, it's a tie.
 
+**Features**
+*Score Tracking*
+Tracks and displays the number of wins, losses, and ties for both the user and the computer after each round.
+Keeps a running score of wins, losses, and ties, allowing players to see how they’re doing after each match.
+*Game Rounds Limit*
+
+Allows the user to set the number of rounds at the beginning of the game.
+Displays an overall winner at the end based on the total scores from all rounds.
+*Simple Console UI*
+
+Prompts the user for their choice each round.
+Displays both the user's and computer's choices as well as the result of each round.
+
 **Code Structure**
 The game is split into three Java classes:
 
